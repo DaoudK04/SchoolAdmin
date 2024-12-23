@@ -1,3 +1,3 @@
-public class Student extends elementarySchool {
+public class Student extends School {
     
 }

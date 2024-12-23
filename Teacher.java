@@ -1,3 +1,3 @@
-public class Teacher extends elementarySchool{
+public class Teacher extends School{
     
 }
