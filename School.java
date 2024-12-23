@@ -21,13 +21,10 @@ public class School extends District {
     }
 
     //Not sure if createTeacher is necessary same in Student.java
-    public Teacher createTeacher(String n, String sub){
-        return new Teacher(super.getDistrict(), this.schoolName, n, sub);
-    }
-
-    public void addTeacher(Teacher t){
-        staff.add(t);
-        System.out.println("Removed teacher " + t.getName() + " from " + this.schoolName);
+    public void createTeacher(String n, String sub){
+        Teacher teacher =  new Teacher(super.getDistrict(), this.schoolName, n, sub);
+        staff.add(teacher);
+        System.out.println("Added teacher " + teacher.getName() + " to " + this.schoolName);
     }
 
     public void removeTeacher(Teacher t){
