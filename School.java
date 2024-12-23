@@ -4,17 +4,21 @@ public class School extends District {
 
     public School(String d, String s){
         super(d);
-        schoolName = s;
+        this.schoolName = s;
     }
 
 
+    public void setSchoolName(String s){
+        this.schoolName = s;
+    }
+    
     public String getSchoolName(){
-        return schoolName;
+        return this.schoolName;
     }
 
     @Override
     public String toString(){
-         return super.getDistrict() + " " + schoolName;
+         return super.getDistrict() + " " + this.schoolName;
     }
 
 }

@@ -12,7 +12,7 @@ public class District {
 
     @Override
     public String toString(){
-        return district;
+        return this.district;
     }
     
 }
