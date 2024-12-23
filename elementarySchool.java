@@ -8,12 +8,13 @@ public class elementarySchool extends District {
     }
 
 
-    String getSchoolName(){
+    public String getSchoolName(){
         return schoolName;
     }
 
-    String toString(){
-        return super.getDistrict() + " " + schoolName;
+    @Override
+    public String toString(){
+         return super.getDistrict() + " " + schoolName;
     }
 
 }
