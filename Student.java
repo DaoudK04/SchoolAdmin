@@ -2,8 +2,8 @@ public class Student extends School {
     
     private String name;
     
-    public Student(String d, String s, String n){
-        super(d,s);
+    public Student(District d, String s, String n){
+        super(d.getDistrict(),s);
         this.name = n;
     }
 

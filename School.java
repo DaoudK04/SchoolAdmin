@@ -5,8 +5,8 @@ public class School extends District {
     private String schoolName;
     private ArrayList<Teacher> staff;
 
-    public School(String d, String s){
-        super(d);
+    public School(District d, String s){
+        super(d.getDistrict());
         this.schoolName = s;
         staff = new ArrayList<Teacher>();
     }
