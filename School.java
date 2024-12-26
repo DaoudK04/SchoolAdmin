@@ -5,8 +5,8 @@ public class School extends District {
     private String schoolName;
     private ArrayList<Teacher> staff;
 
-    public School(District d, String s){
-        super(d.getDistrict());
+    public School(String d, String s){
+        super(d);
         this.schoolName = s;
         staff = new ArrayList<Teacher>();
     }
@@ -19,12 +19,12 @@ public class School extends District {
     public String getSchoolName(){
         return this.schoolName;
     }
-
+    
     //Not sure if createTeacher is necessary same in Student.java
-    public void createTeacher(String n, String sub){
+    /*public void createTeacher(String n, String sub){
         Teacher teacher =  new Teacher(super.getDistrict(), this.schoolName, n, sub);
         staff.add(teacher);
-        System.out.println("Added teacher " + teacher.getName() + " to " + this.schoolName);
+        System.out.println("Added teacher " + n + " to " + this.schoolName);
     }
 
     public void removeTeacher(Teacher t){
@@ -35,6 +35,6 @@ public class School extends District {
     @Override
     public String toString(){
          return super.getDistrict() + " " + this.schoolName;
-    }
+    }*/
 
 }

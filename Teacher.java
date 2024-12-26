@@ -28,7 +28,28 @@ public class Teacher extends School{
         this.name = n;
     }
 
-    //Not Sure if needed or places right
+    public void addTeacher(ArrayList<Teacher> z, Teacher n){
+        z.add(n);
+        System.out.println("Added teacher " + n.getName() + " to " + n.getSchoolName());
+        //return z;
+    }
+
+    public void removeTeacher(ArrayList<Teacher> z, Teacher t){
+        z.remove(t);
+        System.out.println("Removed teacher " + t.getName() + " from " + super.getSchoolName());
+        //return z;
+    }
+
+    public void clearStaff(ArrayList<Teacher> z){
+        z.clear();
+    }
+    
+    
+    
+    
+    
+        //Not Sure if needed or places right
+        //the student declaration gives an error 
     public void createStudent(String n){
         Student student = new Student(super.getDistrict(), super.getSchoolName(), n);
         roster.add(student);
@@ -41,6 +62,10 @@ public class Teacher extends School{
 
     public ArrayList<Student> getRoster(){
         return roster;
+    }
+
+    public void clearRoster(){
+        roster.clear();
     }
 
     @Override
